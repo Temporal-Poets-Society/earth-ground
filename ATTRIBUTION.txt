@@ -1,0 +1,28 @@
+Earth ground data (30"), release egts-v1, converted for the Vintage Story mod Earth
+
+This is adapted data. Each file is one source, converted to Earth's tile format (EGTS of EGT1 tiles, 1/120 degree,
+10-degree tiles). Not endorsed by ISRIC, the authors of the data, or PANGAEA.
+
+global-soilgroup-30s.egts
+  SoilGrids 2.0, ISRIC - World Soil Information: WRB most probable reference soil group.
+  Poggio, L., de Sousa, L. M., Batjes, N. H., Heuvelink, G. B. M., Kempen, B., Ribeiro, E. and Rossiter, D. (2021):
+  SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty. SOIL 7, 217-240,
+  https://doi.org/10.5194/soil-7-217-2021
+  Licence: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+  Changes: the most common class of 16 full-resolution cells per 30" cell; 0 read as Acrisols only where the Acrisols
+  probability says so; gaps of up to 12 cells filled with the nearest mapped class.
+
+global-shangguan-30s.egts
+  Shangguan, W., Hengl, T., Mendes de Jesus, J., Yuan, H. and Dai, Y. (2017): Mapping the global depth to bedrock for
+  land surface modeling. Journal of Advances in Modeling Earth Systems 9, 65-88, https://doi.org/10.1002/2016MS000686
+  Data: SoilGrids250m 2017-03-10, BDTICM_M (absolute depth to bedrock), 1 km aggregate, ISRIC.
+  Licence: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+  Changes: centimetres to metres, log-coded in one byte (m = exp(v / 40) - 1); the source's grid.
+
+global-permafrost-30s.egts
+  Obu, J., Westermann, S., Kaab, A. and Bartsch, A. (2018): Ground Temperature Map, 2000-2016, Northern Hemisphere
+  Permafrost. PANGAEA, https://doi.org/10.1594/PANGAEA.888600
+  (Obu et al. 2019, Earth-Science Reviews 193, 299-316, https://doi.org/10.1016/j.earscirev.2019.04.023)
+  Licence: CC BY 3.0, https://creativecommons.org/licenses/by/3.0/
+  Changes: permafrost probability read from the 1 km polar stereographic grid at each 30" cell centre from 25 N
+  northward, stored in whole percent.

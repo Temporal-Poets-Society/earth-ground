@@ -1,0 +1,45 @@
+{
+  "format": "egts",
+  "formatVersion": 1,
+  "tileFormat": "EGT1",
+  "release": "egts-v1",
+  "step": "30 arc-seconds (1/120 degree)",
+  "tileSize": "10 x 10 degrees, 1200 x 1200 cells",
+  "installTo": "VintagestoryData/ModData/earth/ground",
+  "about": "Ground-column data at 30\" for the Vintage Story mod Earth: soil groups, depth to bedrock and permafrost probability.",
+  "sets": [
+    {
+      "name": "global-soilgroup-30s.egts",
+      "path": "ground/global-soilgroup-30s.egts",
+      "bytes": 20979888,
+      "sha256": "b1b1f22d7c1d46a142a1ebdb86f802d4956213a4b26d61c033d0d214828089a8",
+      "tiles": 296,
+      "field": "soil_group",
+      "unit": "category (30 WRB reference soil groups)",
+      "source": "SoilGrids 2.0 WRB most probable group (ISRIC; Poggio et al. 2021)",
+      "licence": "CC BY 4.0"
+    },
+    {
+      "name": "global-shangguan-30s.egts",
+      "path": "ground/global-shangguan-30s.egts",
+      "bytes": 134774489,
+      "sha256": "d4c165f7b346aed9ba91f39778dda2f5c47962a857628dd81be8ee98282bc40d",
+      "tiles": 365,
+      "field": "quaternary_m",
+      "unit": "metres, log-coded: m = exp(v / 40) - 1",
+      "source": "Shangguan et al. 2017 depth to bedrock (SoilGrids250m 2017, BDTICM_M, 1 km)",
+      "licence": "CC BY 4.0"
+    },
+    {
+      "name": "global-permafrost-30s.egts",
+      "path": "ground/global-permafrost-30s.egts",
+      "bytes": 16496922,
+      "sha256": "ff9117624a5bdb6ce415832fd9634deeae1ce21ccaab2ed6dc0036dbae741739",
+      "tiles": 153,
+      "field": "permafrost_pct",
+      "unit": "percent, 1-100",
+      "source": "Obu et al. 2018/2019 permafrost probability 2000-2016, Northern Hemisphere (PANGAEA 888600)",
+      "licence": "CC BY 3.0"
+    }
+  ]
+}
